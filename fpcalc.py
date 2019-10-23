@@ -79,7 +79,7 @@ if  __name__ == "__main__":
     # Calculate frequency
     if(args.magnitude in pMagnitude.keys()):
         
-        print( "reciprocal of %d %sseconds is" %
+        print( "reciprocal of %f %sseconds is" %
         (args.temporal,args.magnitude) ),
 
         print("%f %shertz" % 
@@ -87,7 +87,7 @@ if  __name__ == "__main__":
     
     # Calculate period
     elif(args.magnitude in fMagnitude.keys()):
-        print( "reciprocal of %d %shertz is" % 
+        print( "reciprocal of %f %shertz is" % 
         (args.temporal,args.magnitude) ),
         print( "%f %sseconds" %
          calculatePeriod(args.magnitude,args.temporal) ),
